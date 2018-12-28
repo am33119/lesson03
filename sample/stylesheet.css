@@ -8,6 +8,7 @@ body {
   margin: 0 auto;
   background-color: white;
 }
+
 .container:after{
   clear: both;
   display: block;
@@ -19,6 +20,7 @@ body {
   height: 100px;
   padding-top: 50px;
 }
+
 h1 {
   margin: 0;
 }
@@ -68,6 +70,7 @@ h1 {
   height: 200px;
   border: 2px solid gray;
 }
+
 .left-content img:after{
   clear: both;
   content: " ";
@@ -79,6 +82,7 @@ h1 {
   height: 250px;
   padding-left: 10px;
 }
+
 .left-comment:after{
   clear: both;
   content: " ";
@@ -96,14 +100,15 @@ h4 {
   float: left;
   width: 300px;
 }
+
 .right-blog:after{
   clear: both;
   content: " ";
 }
+
 .right-content {
   margin-bottom: 20px;
   overflow: hidden
-
 }
 
 .right-content img {
@@ -112,15 +117,11 @@ h4 {
   float: left;
   border: 1px solid gray;
   margin-right: 10px;
-
 }
+
 .right-content img:after{
   clear: both;
   content: " ";
-}
-
-.right-comment {
-
 }
 
 .right-comment h4 {
@@ -129,7 +130,6 @@ h4 {
 
 .right-comment a {
   text-decoration: none;
-
 }
 
 h2 {
