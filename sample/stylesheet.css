@@ -1,0 +1,152 @@
+body {
+  background-color: #e1e1e1;
+  font-family: Verdana, 'Arial Black';
+}
+
+.container {
+  width: 950px;
+  margin: 0 auto;
+  background-color: white;
+}
+.container:after{
+  clear: both;
+  display: block;
+  content: " ";
+}
+
+.header-title {
+  text-align: center;
+  height: 100px;
+  padding-top: 50px;
+}
+h1 {
+  margin: 0;
+}
+
+.header-navigation {
+  width: 100%;
+  background-color: #04050aeb;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.header-navigation li {
+  float: left;
+  list-style-type: none;
+  padding-right: 30px;
+  padding-bottom: 10px;
+}
+
+.header-navigation li a{
+  color: white;
+  text-decoration: none;
+}
+
+.header-navigation:after {
+  clear: both;
+  display: block;
+  content: " ";
+}
+
+
+.left-blog {
+  width: 600px;
+  float: left;
+}
+.left-blog:after{
+  clear: both;
+  content: " ";
+}
+
+.left-content {
+  padding: 30px;
+}
+
+.left-content img {
+  float: left;
+  width: 150px;
+  height: 200px;
+  border: 2px solid gray;
+}
+.left-content img:after{
+  clear: both;
+  content: " ";
+}
+
+.left-comment {
+  float: left;
+  width: 370px;
+  height: 250px;
+  padding-left: 10px;
+}
+.left-comment:after{
+  clear: both;
+  content: " ";
+}
+
+.left-comment a {
+  text-decoration: none;
+}
+
+h4 {
+  margin-top: 0;
+}
+
+.right-blog {
+  float: left;
+  width: 300px;
+}
+.right-blog:after{
+  clear: both;
+  content: " ";
+}
+.right-content {
+  margin-bottom: 20px;
+  overflow: hidden
+
+}
+
+.right-content img {
+  width: 80px;
+  height: 100px;
+  float: left;
+  border: 1px solid gray;
+  margin-right: 10px;
+
+}
+.right-content img:after{
+  clear: both;
+  content: " ";
+}
+
+.right-comment {
+
+}
+
+.right-comment h4 {
+  font-weight: normal;
+}
+
+.right-comment a {
+  text-decoration: none;
+
+}
+
+h2 {
+  border-bottom: 1px solid black;
+}
+
+.main-contents:after {
+  clear: both;
+  display:block;
+  content:" ";
+}
+
+.copyright {
+  color: #777;
+  text-align: center;
+  border-top: 1px solid gray;
+  height: 50px;
+  padding: 50px 0;
+  margin: 0;
+}
