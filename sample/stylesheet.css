@@ -55,6 +55,7 @@ h1 {
   width: 600px;
   float: left;
 }
+
 .left-blog:after{
   clear: both;
   content: " ";
