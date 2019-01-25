@@ -14,7 +14,7 @@ class ProfileController extends Controller
         // News Modelからデータを取得する
 
         $profile = Profile::find($request->id);
-
+        \Debugbar::info($profile);
         return view('admin.profile.edit', ['profile_form' => $profile]);
     }
     public function create(Request $request)
@@ -30,18 +30,25 @@ class ProfileController extends Controller
 
           unset($form['_token']);
           // データベースに保存する
-          $news->fill($form);
-          $news->save();
+          $profile->fill($form);
+          $profile->save();
 
           return redirect('admin/profile/create');
       }
+
+      public function add()
+   {
+     return view('admin.profile.create');
+   }
 
       public function update(Request $request)
       {
           // Validationをかける
           $this->validate($request, Profile::$rules);
           // News Modelからデータを取得する
+          \Debugbar::info($request);
           $profile = Profile::find($request->id);
+          \Debugbar::info($profile);
           // 送信されてきたフォームデータを格納する
           $profile_form = $request->all();
           unset($profile_form['_token']);
@@ -54,11 +61,11 @@ class ProfileController extends Controller
           return redirect('admin/profile/edit');
       }
       public function delete(Request $request)
-  {
+      {
       // 該当するNews Modelを取得
       $profile = Profile::find($request->id);
       // 削除する
       $profile->delete();
       return redirect('admin/profile/');
-  }
+      }
 }
