@@ -26,8 +26,8 @@
                         <label class="col-md-2" for="gender">性別</label>
                         <div class="col-md-10">
                             <ul>
-                              <li>男性<input type="radio" class="form-control" name="gender" value="男"></li>
-                              <li>女性<input type="radio" class="form-control" name="gender" value="女"></li>
+                              <li>男性<input type="radio" class="form-control" name="gender" value="0"></li>
+                              <li>女性<input type="radio" class="form-control" name="gender" value="1"></li>
                             </ul>
                         </div>
                     </div>
