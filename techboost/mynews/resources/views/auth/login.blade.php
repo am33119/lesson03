@@ -9,12 +9,14 @@
 
                     <div class="login-body card-body">
                         <form method="POST" action="{{ route('login') }}">
+                            <!--認証済みのユーザーがリクエストを送信しているのかを確認するために利用-->
                             @csrf
 
                             <div class="form-group row">
                                 <label for="email" class="col-sm-4 col-form-label text-md-right">{{ __('messages.E-Mail Address') }}</label>
 
                                 <div class="col-md-6">
+                                    <!--このoldヘルパ関数は、セッションにフラッシュデータ（一時的にしか保存されないデータ）として入力されているデータを取得することができます。-->
                                     <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required autofocus>
 
                                     @if ($errors->has('email'))
@@ -51,6 +53,7 @@
 
                             <div class="form-group row mb-0">
                                 <div class="col-md-8 offset-md-4">
+                                  <!--「__(‘Login’)」「__」は、ヘルパ関数（viewで使うための関数）の一種で、翻訳文字列の取得として使われます。-->
                                     <button type="submit" class="btn btn-primary">
                                         {{ __('messages.Login') }}
                                     </button>

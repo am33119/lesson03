@@ -1,18 +1,3 @@
-{{-- admin.blade.phpの@yield('title')に'プロフィールの新規作成'を埋め込む --}}
-@section('title', 'プロフィールの新規作成')
-
-{{-- admin.blade.phpの@yield('content')に以下のタグを埋め込む --}}
-@section('content')
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8 mx-auto">
-                <h2>プロフィール新規作成</h2>
-            </div>
-        </div>
-    </div>
-@endsection
-
-
 <!DOCTYPE html>
 <html lang="{{ app()->getLocale() }}">
     <head>
@@ -39,7 +24,7 @@
         {{-- Laravel標準で用意されているCSSを読み込みます --}}
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
         {{-- この章の後半で作成するCSSを読み込みます --}}
-        <link href="{{ asset('css/profile.css') }}" rel="stylesheet">
+        <link href="{{ asset('css/front.css') }}" rel="stylesheet">
     </head>
     <body>
         <div id="app">
@@ -84,7 +69,7 @@
                                     </form>
                                 </div>
                             </li>
-                        @endguest
+                            @endguest
                         </ul>
                     </div>
                 </div>

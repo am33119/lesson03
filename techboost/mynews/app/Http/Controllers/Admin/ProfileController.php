@@ -78,7 +78,7 @@ class ProfileController extends Controller
     //プロフィールを削除する
     public function delete(Request $request)
     {
-        // 該当するNews Modelを取得
+        // 該当するProfile Modelを取得
         $profile = Profile::find($request->id);
         // 削除する
         $profile->delete();

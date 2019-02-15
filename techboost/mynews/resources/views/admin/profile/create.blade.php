@@ -8,6 +8,7 @@
                 <h2>プロフィール新規作成</h2>
                 <form action="{{ action('Admin\ProfileController@create') }}" method="post" enctype="multipart/form-data">
 
+                    <!--`$errors` は `validate` で弾かれた内容を記憶する配列,countメソッドは配列の個数を返すメソッド-->
                     @if (count($errors) > 0)
                         <ul>
                             @foreach($errors->all() as $e)

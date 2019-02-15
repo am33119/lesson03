@@ -40,6 +40,7 @@
                             @foreach($posts as $news)
                                 <tr>
                                     <th>{{ $news->id }}</th>
+                                    <!--str_limit()は、文字列を指定した数値で切り詰めるというメソッド-->
                                     <td>{{ str_limit($news->title, 100) }}</td>
                                     <td>{{ str_limit($news->body, 250) }}</td>
                                     <td>
